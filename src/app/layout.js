@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "SWOO Market — Home",
   description: "The first online tech marketplace — best deals and devices",
+  icons: {
+    icon: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

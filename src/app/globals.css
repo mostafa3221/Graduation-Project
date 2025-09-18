@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #E2E4EB;
   --foreground: #171717;
 }
 
@@ -12,12 +12,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+html[lang="en"] {
+  direction: ltr;
+}
+
+/* Ensure font display swap to reduce FOIT */
+@font-face {
+  font-display: swap;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

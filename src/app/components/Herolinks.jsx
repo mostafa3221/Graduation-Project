@@ -19,7 +19,7 @@ const Herolinks = () => {
   const category = searchParams.get("category");
   return (
     <>
-      <div className=" h-full w-[25%] flex flex-col md: flex-row items-center justify-center p-8 bg-white rounded-lg shadow-xl mb-[10px]">
+<div className="hidden md:flex h-full w-[25%] flex-col md:flex-row items-center justify-center p-8 bg-white rounded-lg shadow-xl mb-[10px]">
         <ul className="flex flex-col">
           {categories.map((cat, index) => (
             <li key={index} className="p-2 hover:text-blue-500 cursor-pointer">
